@@ -10,3 +10,8 @@
 
 [不修改数组 找出数组中的重复数据](https://github.com/LeeWongSnail/HelloOffer/blob/master/DuplicateNumWithoutModifyArray/README.md)
 
+
+## 二维数组中查找是否包含某个数字
+
+[二维数组中查找是否包含某个数字](https://github.com/LeeWongSnail/HelloOffer/blob/master/NumInDimension/README.md)
+

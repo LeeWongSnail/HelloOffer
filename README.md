@@ -19,4 +19,7 @@
 
 [替换字符串中的空格](https://github.com/LeeWongSnail/HelloOffer/blob/master/StringReplaceBlank/README.md)
 
+## 将链表就地逆置
+
+[将链表就地逆置](https://github.com/LeeWongSnail/HelloOffer/blob/master/ReverseNodeList/README.md)
 

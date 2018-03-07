@@ -27,3 +27,7 @@
 ## 构建二叉树
 [构建二叉树](https://github.com/LeeWongSnail/HelloOffer/blob/master/BuildBinaryTree/README.md)
 
+## 查找二叉树的下一个节点
+[二叉树的下一个节点](https://github.com/LeeWongSnail/HelloOffer/blob/master/FindBinaryTreeNextNode/README.md)
+
+

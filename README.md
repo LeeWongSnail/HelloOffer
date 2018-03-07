@@ -23,3 +23,7 @@
 
 [将链表就地逆置](https://github.com/LeeWongSnail/HelloOffer/blob/master/ReverseNodeList/README.md)
 
+
+## 构建二叉树
+[构建二叉树](https://github.com/LeeWongSnail/HelloOffer/blob/master/BuildBinaryTree/README.md)
+

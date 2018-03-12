@@ -33,4 +33,7 @@
 ## 用两个栈实现一个队列的如队列和出队列功能
 [使用两个栈实现一个队列的功能](https://github.com/LeeWongSnail/HelloOffer/tree/master/TwoStack2Queue)
 
+## Fiboncii 的第n个的值
+[Fiboncii 的第n个的值](https://github.com/LeeWongSnail/HelloOffer/tree/master/GetFibonacciN)
+
 

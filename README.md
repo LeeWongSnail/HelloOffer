@@ -36,4 +36,7 @@
 ## Fiboncii 的第n个的值
 [Fiboncii 的第n个的值](https://github.com/LeeWongSnail/HelloOffer/tree/master/GetFibonacciN)
 
+## 旋转数组中的最小值
+[旋转数组中的最小值](https://github.com/LeeWongSnail/HelloOffer/tree/master/RotateArrayMinNum)
+
 

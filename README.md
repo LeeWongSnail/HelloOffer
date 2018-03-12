@@ -30,4 +30,7 @@
 ## 查找二叉树的下一个节点
 [二叉树的下一个节点](https://github.com/LeeWongSnail/HelloOffer/blob/master/FindBinaryTreeNextNode/README.md)
 
+## 用两个栈实现一个队列的如队列和出队列功能
+[使用两个栈实现一个队列的功能](https://github.com/LeeWongSnail/HelloOffer/tree/master/TwoStack2Queue)
+
 

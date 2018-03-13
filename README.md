@@ -40,3 +40,7 @@
 [旋转数组中的最小值](https://github.com/LeeWongSnail/HelloOffer/tree/master/RotateArrayMinNum)
 
 
+## 矩阵中的路径
+
+[矩阵中的路径](https://github.com/LeeWongSnail/HelloOffer/tree/master/PathInMatrix)
+

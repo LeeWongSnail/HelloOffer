@@ -50,3 +50,6 @@
 ## 割绳子
 [割绳子](https://github.com/LeeWongSnail/HelloOffer/tree/master/CutRope)
 
+## 二进制数字中1的个数
+[二进制数字中1的个数](https://github.com/LeeWongSnail/HelloOffer/tree/master/1TimesInBinaryNumber)
+

@@ -57,7 +57,6 @@ double PowerWithUnsignedExponent2(double base, unsigned int exponent) {
 }
 
 // 考虑到0 和负数
-
 bool g_InvalidInput = false;
 double Power2(double base, double exponent) {
     

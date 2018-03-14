@@ -56,3 +56,6 @@
 ## 实现Pow函数
 [实现POW函数](https://github.com/LeeWongSnail/HelloOffer/tree/master/Power)
 
+## 删除链表中的某个节点
+[删除链表中的某个节点](https://github.com/LeeWongSnail/HelloOffer/tree/master/DeleteNodeInList)
+

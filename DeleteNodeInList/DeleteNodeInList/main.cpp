@@ -58,7 +58,8 @@ void PrintListNode(ListNode* pNode)
     }
 }
 
-
+//这种方法还包含一个问题是 如果链表中不存在这个节点 我们可能需要给用户一个反馈
+//告知调用者 没有这么一个节点
 void deleteNodeInList(ListNode **pListHead,ListNode *pToBeDeleted) {
     if (!pListHead || !pToBeDeleted) {
         return;

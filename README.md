@@ -66,4 +66,8 @@
 ## 表示数字的字符串
 [表示数字的字符串](https://github.com/LeeWongSnail/HelloOffer/tree/master/NumberString)
 
+## 调整数组顺序
+
+[调整数组顺序](https://github.com/LeeWongSnail/HelloOffer/tree/master/ReSortArray)
+
 

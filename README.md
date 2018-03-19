@@ -72,3 +72,6 @@
 ## 合并两个有序列表
 [合并两个有序列表](https://github.com/LeeWongSnail/HelloOffer/tree/master/MergeTwoOrderList)
 
+## 一个树是否为另一个树的子树
+[一个树是否为另一个树的子树](https://github.com/LeeWongSnail/HelloOffer/tree/master/TreeContainTree)
+

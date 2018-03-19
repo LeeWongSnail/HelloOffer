@@ -70,6 +70,60 @@ ListNode * MergeTwoList(ListNode *pHead1,ListNode *pHead2) {
     return pMerageHead;
 }
 
+ListNode * MergeTwoList2(ListNode *pHead1,ListNode *pHead2) {
+    
+    if (pHead1 == nullptr) {
+        return pHead2;
+    } else if (pHead2 == nullptr) {
+        return pHead1;
+    }
+    
+    ListNode *pMerageHead = nullptr;
+    ListNode *pNext = nullptr;
+    ListNode *pPre = nullptr;
+    while (pHead1!= nullptr && pHead2 != nullptr) {
+        
+        if (pHead1->m_nValue < pHead2->m_nValue) {
+            if (pMerageHead == nullptr) {
+                pMerageHead = pHead1;
+                pHead1= pHead1->m_pNext;
+                pNext = pMerageHead;
+                pNext->m_pNext = nullptr;
+            } else {
+                pPre = pNext;
+                pNext = pHead1;
+                pPre->m_pNext = pNext;
+                pHead1 = pHead1->m_pNext;
+                pNext ->m_pNext = nullptr;
+            }
+            
+        } else {
+            if (pMerageHead == nullptr) {
+                pMerageHead = pHead2;
+                pHead2= pHead2->m_pNext;
+                pNext = pMerageHead;
+                pNext->m_pNext = nullptr;
+            } else {
+                pPre = pNext;
+                pNext = pHead2;
+                pPre->m_pNext = pNext;
+                pHead2 = pHead2->m_pNext;
+                pNext ->m_pNext = nullptr;
+            }
+            
+        }
+        
+    }
+    
+    if (pHead1 == nullptr) {
+        pNext->m_pNext = pHead2;
+    }
+    
+    if (pHead2 == nullptr) {
+        pNext->m_pNext = pHead1;
+    }
+    return pMerageHead;
+}
 
 
 int main(int argc, const char * argv[]) {
@@ -88,7 +142,7 @@ int main(int argc, const char * argv[]) {
     ConnectListNodes(pNode2, pNode4);
     ConnectListNodes(pNode4, pNode6);
     
-    ListNode* pMergedHead = MergeTwoList(pNode1, pNode2);
+    ListNode* pMergedHead = MergeTwoList2(pNode1, pNode2);
     while (pMergedHead != nullptr) {
         printf("%d\n",pMergedHead->m_nValue);
         pMergedHead= pMergedHead->m_pNext;

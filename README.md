@@ -82,4 +82,7 @@
 ## 二叉树是否对称
 [二叉树是否对称](https://github.com/LeeWongSnail/HelloOffer/tree/master/SymmetricalTree)
 
+## 给栈实现一个Min方法获取最小值
+[栈的Min方法](https://github.com/LeeWongSnail/HelloOffer/tree/master/StackWithMinFunction)
+
 

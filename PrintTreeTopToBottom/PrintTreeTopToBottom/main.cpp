@@ -111,14 +111,14 @@ void Print(BinaryTreeNode *pRoot) {
         BinaryTreeNode *pNode = nodes.front();
         printf("%d",pNode->m_pValue);
         
-        if (pNode->m_pLeft) {
-            nodes.push(pNode->m_pLeft);
-            nextLevel ++;
-        }
-        
         if (pNode->m_pRight) {
             nodes.push(pNode->m_pRight);
             nextLevel++;
+        }
+        
+        if (pNode->m_pLeft) {
+            nodes.push(pNode->m_pLeft);
+            nextLevel ++;
         }
         
         nodes.pop();

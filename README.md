@@ -92,3 +92,6 @@
 ## 从上到下打印一颗二叉树
 [从上到下打印一颗二叉树](https://github.com/LeeWongSnail/HelloOffer/tree/master/PrintTreeTopToBottom)
 
+## 之字形打印二叉树
+[之字形打印二叉树](https://github.com/LeeWongSnail/HelloOffer/tree/master/PrintTreeInZOrder)
+

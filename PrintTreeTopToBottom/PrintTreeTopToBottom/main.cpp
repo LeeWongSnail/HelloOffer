@@ -26,17 +26,22 @@ struct BinaryTreeNode {
 
 
 void PrintTreeNode(BinaryTreeNode *pLeft, BinaryTreeNode *pRight) {
+    //先打印左子树
     if (pLeft != nullptr) {
         printf("%d\n",pLeft->m_pValue);
     }
-    
+    //再打印右子树
     if (pRight != nullptr) {
         printf("%d\n",pRight->m_pValue);
     }
+    
+    // 如果左子树不为空那么 递归打印左子树
     if (pLeft != nullptr) {
         
         PrintTreeNode(pLeft->m_pLeft, pLeft->m_pRight);
     }
+    
+    // 如果右子树不为空 那么递归打印右子树
     if (pRight != nullptr) {
         PrintTreeNode(pRight->m_pLeft, pRight->m_pRight);
     }
@@ -46,7 +51,9 @@ void PrintTree(BinaryTreeNode *pRoot) {
     if (pRoot == nullptr) {
         return;
     }
+    // 先打印根节点
     printf("%d\n",pRoot->m_pValue);
+    //打印根节点的左右两个子树
     PrintTreeNode(pRoot->m_pLeft, pRoot->m_pRight);
 }
 

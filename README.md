@@ -86,3 +86,6 @@
 [栈的Min方法](https://github.com/LeeWongSnail/HelloOffer/tree/master/StackWithMinFunction)
 
 
+## 栈的压入和弹出序列
+[栈的压入和弹出序列](https://github.com/LeeWongSnail/HelloOffer/tree/master/IsPopOrderStack)
+

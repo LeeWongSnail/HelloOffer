@@ -26,7 +26,6 @@
 // 这个题目的前提是要知道二叉搜索树的一个特点
 // 根节点的值大于左子树的值
 // 根节点的值大于右子树的值
-
 bool VertifySequeueOfBST(int sequence[],int length) {
     
     if (sequence == nullptr || length <=0) {

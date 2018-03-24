@@ -95,3 +95,8 @@
 ## 之字形打印二叉树
 [之字形打印二叉树](https://github.com/LeeWongSnail/HelloOffer/tree/master/PrintTreeInZOrder)
 
+## 二叉搜索树后续遍历序列
+
+[二叉搜索树后续遍历序列](https://github.com/LeeWongSnail/HelloOffer/tree/master/VertifySequeueOfBST)
+
+

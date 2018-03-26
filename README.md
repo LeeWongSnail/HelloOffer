@@ -99,4 +99,8 @@
 
 [二叉搜索树后续遍历序列](https://github.com/LeeWongSnail/HelloOffer/tree/master/VertifySequeueOfBST)
 
+## 复杂链表的拷贝
+
+[复杂链表的拷贝](https://github.com/LeeWongSnail/HelloOffer/tree/master/CopyComplexList)
+
 

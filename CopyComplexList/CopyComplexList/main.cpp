@@ -7,10 +7,7 @@
 //
 
 /*
- 复杂的链表复制
- 请实现函数ComplexListNode *Clone(ComplexListNode *pHead) 复制一个复杂链表。
- 在复杂链表中 每个节点除了有一个m_pNext指针指向下一个节点，还有一个m_pSibling 指针指向链表中的任一节点
- 或者 nullptr
+ 
  **/
 
 
@@ -49,10 +46,10 @@ ComplexListNode *CloneList(ComplexListNode *pHead) {
     while (pNode != nullptr) {
         ComplexListNode *node = CreateListNode(pNode->m_nValue);
         if (pNewHead == nullptr) {
-            pNext = pNode;
+            pNext = node;
             pNewHead = pNext;
         } else {
-           pNext ->p_Next = pNode;
+           pNext ->p_Next = node;
            pNext = node;
         }
         pNode= pNode->p_Next;
@@ -60,27 +57,35 @@ ComplexListNode *CloneList(ComplexListNode *pHead) {
     
     //下面开始设置 m_Silibing
     pNext = pNewHead;
-    while (pNext != nullptr) {
-        if (pNext->p_Sibling == nullptr) {
-            pNode = pHead;
-            ComplexListNode *pSilibing = nullptr;
+    ComplexListNode *pHead1 = pHead;
+    while (pHead1 != nullptr) {
+       
+        //遍历原来的链表 如果Sibling不为空那么设置新复制的链表的节点的Sibling
+        if (pHead1->p_Sibling != nullptr) {
+             pNode = pNewHead;
             while (pNode != nullptr) {
-                if (pNode->m_nValue == pNext->m_nValue) {
-                    pSilibing = pNode->p_Sibling;
-                    break;
-                }
-            }
-            
-            //找到要指向的元素之后
-            pNode = pNewHead;
-            while (pNode != nullptr) {
-                if (pNode->m_nValue == pSilibing->m_nValue) {
+                if (pNode->m_nValue == pHead1->p_Sibling->m_nValue) {
                     pNext->p_Sibling = pNode;
                     break;
                 }
                 pNode = pNode->p_Next;
             }
+            if (pNode == nullptr) {
+                //找到最后都没有找到这个节点 那么这说明上一步的复制就出了问题
+                printf("复制过程中复现了问题");
+                return nullptr;
+            } else {
+                //找到了对应的节点
+                pNext = pNext->p_Next;
+            }
+            
+            
+        } else {
+            //如果这个节点的sibling节点没有值 那么直接跳过
+            pNext = pNext->p_Next;
         }
+        
+        pHead1 = pHead1->p_Next;
         
     }
     
@@ -248,7 +253,7 @@ int main(int argc, const char * argv[]) {
     BuildNodes(pNode3, pNode4, nullptr);
     BuildNodes(pNode4, pNode5, pNode2);
 
-    ComplexListNode *pHead = Clone(pNode1);
+    ComplexListNode *pHead = CloneList(pNode1);
     
     //打印之前的链表
     PrintList(pNode1);

@@ -156,7 +156,7 @@ void CloneNodes(ComplexListNode *pHead) {
     
 }
 
-// 设置新复制节点的sibling指向
+// 第二步 设置新复制节点的sibling指向
 void ConnectSiblingNodes(ComplexListNode *pHead) {
     ComplexListNode *pNode = pHead;
     
@@ -172,7 +172,7 @@ void ConnectSiblingNodes(ComplexListNode *pHead) {
 
 
 
-// 将原来的一个链表 拆分为两个链表 奇数节点链接成一个链表 偶数节点链接成一个链表
+// 第三部 将原来的一个链表 拆分为两个链表 奇数节点链接成一个链表 偶数节点链接成一个链表
 ComplexListNode *ReConnectNodes(ComplexListNode *pHead) {
     
     ComplexListNode *pNode = pHead;
@@ -196,7 +196,7 @@ ComplexListNode *ReConnectNodes(ComplexListNode *pHead) {
     return pClonedHead;
 }
 
-
+// 总的方法
 ComplexListNode *Clone(ComplexListNode *pHead) {
     // 现将整体复制一遍 并将复制的节点链接在原来的节点后面
     CloneNodes(pHead);

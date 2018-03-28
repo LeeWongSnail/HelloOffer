@@ -107,4 +107,7 @@
 
 [二叉搜索树与双向链表](https://github.com/LeeWongSnail/HelloOffer/tree/master/ConvertBinarySearchTree)
 
+## 序列化二叉树
+
+[序列化二叉树](https://github.com/LeeWongSnail/HelloOffer/tree/master/SerializeBinaryTree)
 

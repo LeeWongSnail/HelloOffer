@@ -60,6 +60,7 @@ bool ReadStream(istream& stream, int* number)
 }
 void DeserializeBinaryTree(BinaryTree **pRoot,istream &stream) {
     int number;
+    //每读出来一个字符判断这个是数字还是$字符
     if (ReadStream(stream,&number)) {
         *pRoot = new BinaryTree();
         (*pRoot)->m_nValue = number;

@@ -26,7 +26,7 @@ void SerializeBinaryTree(BinaryTree *pRoot,ostream &stream) {
         return;
     }
     
-    stream << pRoot->m_nValue;
+    stream << pRoot->m_nValue<<',';
     SerializeBinaryTree(pRoot->m_pLeft, stream);
     SerializeBinaryTree(pRoot->m_pRight, stream);
 }

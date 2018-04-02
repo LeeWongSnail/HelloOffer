@@ -111,3 +111,7 @@
 
 [序列化二叉树](https://github.com/LeeWongSnail/HelloOffer/tree/master/SerializeBinaryTree)
 
+## 字符串的排列
+
+[字符串的排列](https://github.com/LeeWongSnail/HelloOffer/tree/master/Permutation)
+
